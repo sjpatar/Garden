@@ -1,0 +1,14 @@
+{
+  "generatedFallbackAssets": {
+    "description": "The first implementation uses transparent, hand-authored inline SVG botanical artwork and CSS butterfly layers so the experience is fully local and functional. Replace with licensed PNG/WebP files when acquired.",
+    "status": "fallback-in-use",
+    "source": "Project-local authored artwork",
+    "transparency": true,
+    "animation": "CSS/JS motion"
+  },
+  "plannedExternalAssets": [
+    {"category":"music","filename":"assets/music/background.mp3","status":"installed-from-user-provided-file","source":"Mitski_-_My_Love_Mine_All_Mine_(mp3.pm).mp3","licence":"User-provided; confirm personal-use/licensing suitability before public distribution"},
+    {"category":"butterflies","filename":"assets/butterflies/animated/","status":"replace-fallback","licence":"Prefer licensed transparent animated GIF/WebP/APNG"},
+    {"category":"flowers","filename":"assets/flowers/","status":"replace-fallback","licence":"Prefer licensed transparent botanical PNG/WebP"}
+  ]
+}

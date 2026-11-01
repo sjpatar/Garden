@@ -1,0 +1,92 @@
+/* Phone layouts: preserve the gift card in portrait and keep the whole garden composed in landscape. */
+@media (max-width: 700px) and (orientation: portrait) {
+  .scene--welcome { min-height: 100svh; padding: 24px 14px 48px; }
+  .scene--welcome .card-shell { width: min(100%, 440px); min-height: 0; height: auto; margin: 0 auto 16px; padding: 58px 26px 58px; border-radius: 220px 220px 24px 24px; }
+  .card-shell:after { border-radius: 205px 205px 18px 18px; }
+  .seal { width: 48px; height: 48px; margin-bottom: 18px; }
+  .card-shell h1 { font-size: clamp(43px, 13vw, 59px); }
+  .welcome-copy { font-size: 15px; }
+  .personal-line { margin: 18px 0; }
+  .primary-button { padding: 14px 19px; font-size: 14px; }
+  .welcome-footer { bottom: 12px; font-size: 12px; }
+  .garden-header { top: 6%; width: 94vw; }
+  .garden-header h2 { max-width: 100%; font-size: clamp(37px, 10vw, 50px); }
+  .garden-header p:last-child { max-width: 88vw; margin: 8px auto; font-size: 12px; }
+  /* Scrollable portrait garden with three flower rows; every bloom has its own tap target. */
+  .scene--garden { min-height: 1080px; height: 100svh; overflow-x: hidden; overflow-y: auto; }
+  .sky-layer,.distant-hills,.garden-haze,.garden-path { position: absolute; }
+  .garden-header { position: absolute; top: 38px; }
+  .garden-header h2 { font-size: clamp(34px, 9vw, 44px); }
+  .garden-header p:last-child { max-width: 80vw; }
+  .garden-path { bottom: 0; height: 55%; }
+  .flowers { position: absolute; height: 100%; bottom: auto; top: 0; }
+  .flowers--back,.flowers--front { height: 100%; bottom: auto; top: 0; }
+  .flower,.flower--back,.flowers--front .flower { width: 60px; height: 112px; transform: none; margin: 0; transform-origin: bottom center; }
+  .flower:hover,.flowers--front .flower:hover { transform: scale(1.08); }
+  .flowers--back .flower,.flowers--front .flower { opacity: 1; }
+  .flowers--back .flower:nth-child(1) { left: 7% !important; top: 330px; }
+  .flowers--back .flower:nth-child(2) { left: 27% !important; top: 355px; }
+  .flowers--back .flower:nth-child(3) { left: 47% !important; top: 330px; }
+  .flowers--back .flower:nth-child(4) { left: 67% !important; top: 355px; }
+  .flowers--back .flower:nth-child(5) { left: 87% !important; top: 330px; }
+  .flowers--front .flower:nth-child(1) { left: 7% !important; top: 515px; }
+  .flowers--front .flower:nth-child(2) { left: 27% !important; top: 540px; }
+  .flowers--front .flower:nth-child(3) { left: 47% !important; top: 515px; }
+  .flowers--front .flower:nth-child(4) { left: 67% !important; top: 540px; }
+  .flowers--front .flower:nth-child(5) { left: 87% !important; top: 515px; }
+  .flowers--front .flower:nth-child(6) { left: 7% !important; top: 700px; }
+  .flowers--front .flower:nth-child(7) { left: 27% !important; top: 725px; }
+  .flowers--front .flower:nth-child(8) { left: 47% !important; top: 700px; }
+  .flowers--front .flower:nth-child(9) { left: 67% !important; top: 725px; }
+  .flowers--front .flower:nth-child(10) { left: 87% !important; top: 700px; }
+  .butterflies { z-index: 6; }
+  .butterfly { width: 40px; height: 33px; }
+  .garden-actions { position: sticky; left: auto; right: auto; bottom: 0; z-index: 20; margin-top: 0; padding: 12px 14px max(12px, env(safe-area-inset-bottom)); justify-content: flex-end; gap: 8px; background: linear-gradient(transparent,#779777e8 38%); pointer-events: none; }
+  .garden-actions button { pointer-events: auto; }
+  .round-control { width: 43px; height: 43px; }
+  .letter-button { max-width: 62vw; padding: 12px 13px; font-size: 11px; }
+  .garden-footer { position: sticky; left: 14px; bottom: 8px; z-index: 21; width: max-content; margin: -48px 0 12px 14px; padding: 7px 10px; border-radius: 20px; background: #536f55d9; font: 11px 'DM Sans',sans-serif; letter-spacing: .02em; color: #fffdf4; text-shadow: none; pointer-events: none; }
+  .secret-heart { left: 9%; bottom: 27%; }
+  .secret-star { right: 8%; top: 44%; }
+  .apology-butterfly { left: 58%; top: 34%; width: 54px; height: 44px; animation-name: apologyFlightMobile; }
+  .note-dialog { width: min(92vw, 430px); padding: 42px 28px 30px; }
+  .letter-dialog,.apology-dialog { width: 94vw; max-height: 90svh; overflow: auto; }
+  .letter-card,.apology-card { padding: 42px 26px 30px; }
+}
+@media (max-width: 700px) and (orientation: landscape) {
+  .scene--welcome { min-height: 100svh; padding: 12px 20px; }
+  .scene--welcome .card-shell { width: min(78vw, 700px); height: calc(100svh - 24px); min-height: 0; margin: 0 auto; padding: 22px 44px 34px; border-radius: 150px 150px 20px 20px; }
+  .card-shell:after { border-radius: 140px 140px 15px 15px; }
+  .seal { width: 38px; height: 38px; margin-bottom: 9px; }
+  .card-shell h1 { margin: 6px 0 8px; font-size: clamp(34px, 7vh, 48px); }
+  .eyebrow { margin: 4px 0; font-size: 8px; }
+  .welcome-copy { margin: 7px 0; font-size: 13px; line-height: 1.4; }
+  .personal-line { margin: 8px 0; font-size: 10px; }
+  .primary-button { margin-top: 2px; padding: 10px 17px; font-size: 12px; }
+  .botanical-frame--top { top: 14px; font-size: 16px; }
+  .botanical-frame--bottom { bottom: 10px; font-size: 15px; }
+  .welcome-footer { bottom: 3px; font-size: 10px; }
+  .garden-header { top: 3%; width: 74vw; }
+  .garden-header .eyebrow { font-size: 8px; }
+  .garden-header h2 { margin: 4px 0; font-size: clamp(32px, 7vh, 46px); }
+  .garden-header p:last-child { margin: 2px 0; font-size: 10px; }
+  .flowers { height: 57%; }
+  .flower { transform: scale(.57); transform-origin: bottom center; margin-left: -21px; }
+  .flower--back { transform: scale(.42); }
+  .garden-actions { right: 12px; bottom: 10px; gap: 7px; }
+  .round-control { width: 38px; height: 38px; }
+  .letter-button { padding: 9px 12px; font-size: 10px; }
+  .garden-footer { left: 12px; bottom: 15px; font-size: 9px; }
+  .secret-heart { left: 11%; bottom: 23%; }
+  .secret-star { right: 8%; top: 45%; }
+  .apology-butterfly { left: 64%; top: 32%; width: 48px; height: 40px; animation-name: apologyFlightMobile; }
+  .note-dialog { max-height: 88svh; overflow: auto; padding: 35px 28px 24px; }
+  .letter-dialog,.apology-dialog { max-height: 88svh; overflow: auto; }
+  .letter-card,.apology-card { padding: 30px 36px 24px; }
+}
+@media (max-height: 440px) and (orientation: landscape) {
+  .scene--garden { min-height: 100svh; }
+  .moon { width: 48px; height: 48px; }
+  .flowers { height: 52%; }
+  .garden-path { height: 60%; }
+}
