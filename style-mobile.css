@@ -150,6 +150,51 @@
   .apology-butterfly { left:58%; top:25%; }
 }
 
+/* Tune portrait against the supplied 360–430px phone screenshots. */
+@media (max-width:700px) and (orientation:portrait) {
+  .scene--garden { min-height:1280px; overflow-x:clip; }
+  .garden-header { top:24px; width:calc(100% - 32px); }
+  .garden-header h2 { width:100%; margin:8px auto 5px; font-size:clamp(32px,8.2vw,39px); line-height:.98; white-space:nowrap; letter-spacing:-.035em; }
+  .garden-header h2 em { font-size:.96em; }
+  .garden-header p:last-child { max-width:100%; font-size:11px; }
+  .moon { top:8%; right:7%; width:44px; height:44px; opacity:.68; }
+  .flowers--back { z-index:3; }
+  .flowers--front { z-index:6; }
+  .flower,.flower--back,.flowers--front .flower { width:68px; height:120px; transform:scale(.83); }
+  .flower button { inset:0; }
+  /* Low, irregular meadow drifts. All flower heads and their hit zones stay clear. */
+  .flowers--back .flower:nth-child(1) { left:0% !important; top:315px; }
+  .flowers--back .flower:nth-child(2) { left:34% !important; top:347px; }
+  .flowers--back .flower:nth-child(3) { left:68% !important; top:318px; }
+  .flowers--back .flower:nth-child(4) { left:17% !important; top:474px; }
+  .flowers--back .flower:nth-child(5) { left:70% !important; top:477px; }
+  .flowers--front .flower:nth-child(1) { left:42% !important; top:467px; }
+  .flowers--front .flower:nth-child(2) { left:0% !important; top:602px; }
+  .flowers--front .flower:nth-child(3) { left:31% !important; top:622px; }
+  .flowers--front .flower:nth-child(4) { left:64% !important; top:596px; }
+  .flowers--front .flower:nth-child(5) { left:79% !important; top:635px; }
+  .flowers--front .flower:nth-child(6) { left:12% !important; top:756px; }
+  .flowers--front .flower:nth-child(7) { left:46% !important; top:757px; }
+  .flowers--front .flower:nth-child(8) { left:70% !important; top:785px; }
+  .flowers--front .flower:nth-child(9) { left:0% !important; top:898px; }
+  .flowers--front .flower:nth-child(10) { left:32% !important; top:918px; }
+  .flowers--front .flower:nth-child(11) { left:63% !important; top:895px; }
+  .flowers--front .flower:nth-child(12) { left:78% !important; top:954px; }
+  .flowers--front .flower:nth-child(13) { left:20% !important; top:1060px; }
+  .flowers--front .flower:nth-child(14) { left:51% !important; top:1050px; }
+  .flowers--front .flower:nth-child(15) { left:76% !important; top:1080px; }
+  .grass-bank--back { z-index:4; bottom:8%; height:13%; }
+  .grass-bank--front { z-index:7; bottom:1%; height:8%; }
+  .garden-vines { z-index:8; bottom:1%; height:8%; }
+  .garden-actions { position:absolute; left:0; right:0; bottom:0; min-height:76px; padding:10px 12px max(10px,env(safe-area-inset-bottom)); justify-content:flex-end; background:linear-gradient(180deg,transparent,#527b58 32%); }
+  .round-control { flex:0 0 44px; }
+  .letter-button { max-width:64vw; min-height:44px; font-size:11px; }
+  .garden-footer { position:absolute; z-index:22; bottom:86px; left:50%; right:auto; transform:translateX(-50%); width:max-content; max-width:calc(100% - 30px); margin:0; padding:7px 13px; border-radius:24px; background:#456c4de8; color:#fff; font:500 11px 'DM Sans',sans-serif; letter-spacing:.015em; text-shadow:none; text-align:center; }
+  .secret-heart { z-index:10; }
+  .secret-star { z-index:10; }
+  .apology-butterfly { z-index:9; }
+}
+
 /* Final portrait composition pass: visible meadow, atmospheric background and a single aligned footer bar. */
 @media (max-width:700px) and (orientation:portrait) {
   .scene--garden { min-height:1260px; background:#9bb997; }
