@@ -12,43 +12,44 @@
   .garden-header { top: 6%; width: 94vw; }
   .garden-header h2 { max-width: 100%; font-size: clamp(37px, 10vw, 50px); }
   .garden-header p:last-child { max-width: 88vw; margin: 8px auto; font-size: 12px; }
-  /* Compact portrait meadow: all 18 blooms, including tulips, fit into the scene. */
-  .scene--garden { min-height: 100svh; height: max(100svh, 760px); overflow-x: hidden; overflow-y: auto; }
+  /* Keep the garden composed in the viewport, with all blooms clear of the dock. */
+  .scene--garden { min-height: max(100svh, 760px); height: max(100svh, 760px); overflow-x: hidden; overflow-y: auto; }
   .sky-layer,.distant-hills,.garden-haze,.garden-path { position: absolute; }
-  .garden-header { position: absolute; top: 38px; }
-  .garden-header h2 { font-size: clamp(34px, 9vw, 44px); }
-  .garden-header p:last-child { max-width: 80vw; }
+  .garden-header { position: absolute; top: max(18px, env(safe-area-inset-top)); width: min(92vw, 520px); padding: 0 8px; }
+  .garden-header .eyebrow { margin: 0 0 5px; font-size: 9px; letter-spacing: .2em; }
+  .garden-header h2 { margin: 4px 0 7px; font-size: clamp(34px, 9vw, 44px); line-height: .98; text-wrap: balance; }
+  .garden-header p:last-child { max-width: 86vw; margin: 0 auto; font-size: 12px; line-height: 1.45; }
   .garden-path { bottom: 0; height: 55%; }
   .flowers { position: absolute; height: 100%; bottom: auto; top: 0; }
   .flowers--back,.flowers--front { height: 100%; bottom: auto; top: 0; }
   .flower,.flower--back,.flowers--front .flower { width: 60px; height: 112px; transform: none; margin: 0; transform-origin: bottom center; }
   .flower:hover,.flowers--front .flower:hover { transform: scale(1.08); }
   .flowers--back .flower,.flowers--front .flower { opacity: 1; }
-  .flowers--back .flower:nth-child(1) { left: 7% !important; top: 245px; }
-  .flowers--back .flower:nth-child(2) { left: 27% !important; top: 265px; }
-  .flowers--back .flower:nth-child(3) { left: 47% !important; top: 245px; }
-  .flowers--back .flower:nth-child(4) { left: 67% !important; top: 265px; }
-  .flowers--back .flower:nth-child(5) { left: 87% !important; top: 245px; }
-  .flowers--front .flower:nth-child(1) { left: 7% !important; top: 355px; }
-  .flowers--front .flower:nth-child(2) { left: 27% !important; top: 375px; }
-  .flowers--front .flower:nth-child(3) { left: 47% !important; top: 355px; }
-  .flowers--front .flower:nth-child(4) { left: 67% !important; top: 375px; }
-  .flowers--front .flower:nth-child(5) { left: 87% !important; top: 355px; }
-  .flowers--front .flower:nth-child(6) { left: 7% !important; top: 465px; }
-  .flowers--front .flower:nth-child(7) { left: 27% !important; top: 485px; }
-  .flowers--front .flower:nth-child(8) { left: 47% !important; top: 465px; }
-  .flowers--front .flower:nth-child(9) { left: 67% !important; top: 485px; }
-  .flowers--front .flower:nth-child(10) { left: 87% !important; top: 465px; }
-  .flowers--front .flower:nth-child(11) { left: 12% !important; top: 575px; }
-  .flowers--front .flower:nth-child(12) { left: 47% !important; top: 590px; }
-  .flowers--front .flower:nth-child(13) { left: 82% !important; top: 575px; }
+  .flowers--back .flower:nth-child(1) { left: 7% !important; top: clamp(185px,24svh,245px); }
+  .flowers--back .flower:nth-child(2) { left: 27% !important; top: clamp(200px,26svh,265px); }
+  .flowers--back .flower:nth-child(3) { left: 47% !important; top: clamp(185px,24svh,245px); }
+  .flowers--back .flower:nth-child(4) { left: 67% !important; top: clamp(200px,26svh,265px); }
+  .flowers--back .flower:nth-child(5) { left: 87% !important; top: clamp(185px,24svh,245px); }
+  .flowers--front .flower:nth-child(1) { left: 7% !important; top: clamp(290px,38svh,330px); }
+  .flowers--front .flower:nth-child(2) { left: 27% !important; top: clamp(305px,40svh,350px); }
+  .flowers--front .flower:nth-child(3) { left: 47% !important; top: clamp(290px,38svh,330px); }
+  .flowers--front .flower:nth-child(4) { left: 67% !important; top: clamp(305px,40svh,350px); }
+  .flowers--front .flower:nth-child(5) { left: 87% !important; top: clamp(290px,38svh,330px); }
+  .flowers--front .flower:nth-child(6) { left: 7% !important; top: clamp(395px,52svh,415px); }
+  .flowers--front .flower:nth-child(7) { left: 27% !important; top: clamp(410px,54svh,435px); }
+  .flowers--front .flower:nth-child(8) { left: 47% !important; top: clamp(395px,52svh,415px); }
+  .flowers--front .flower:nth-child(9) { left: 67% !important; top: clamp(410px,54svh,435px); }
+  .flowers--front .flower:nth-child(10) { left: 87% !important; top: clamp(395px,52svh,415px); }
+  .flowers--front .flower:nth-child(11) { left: 12% !important; top: clamp(500px,66svh,530px); }
+  .flowers--front .flower:nth-child(12) { left: 47% !important; top: clamp(515px,68svh,545px); }
+  .flowers--front .flower:nth-child(13) { left: 82% !important; top: clamp(500px,66svh,530px); }
   .butterflies { z-index: 6; }
   .butterfly { width: 40px; height: 33px; }
-  .garden-actions { position: sticky; left: auto; right: auto; bottom: 0; z-index: 20; margin-top: 0; padding: 12px 14px max(12px, env(safe-area-inset-bottom)); justify-content: flex-end; gap: 8px; background: linear-gradient(transparent,#779777e8 38%); pointer-events: none; }
+  .garden-actions { position: fixed; left: 50%; right: auto; bottom: max(10px, env(safe-area-inset-bottom)); transform: translateX(-50%); width: min(calc(100vw - 24px), 390px); z-index: 20; margin: 0; padding: 8px 10px; justify-content: center; gap: 10px; border: 1px solid #ffffff70; border-radius: 32px; background: #6d906edb; box-shadow: 0 8px 24px #344d3940; backdrop-filter: blur(12px); pointer-events: none; }
   .garden-actions button { pointer-events: auto; }
   .round-control { width: 43px; height: 43px; }
   .letter-button { max-width: 62vw; padding: 12px 13px; font-size: 11px; }
-  .garden-footer { position: sticky; left: 14px; bottom: 8px; z-index: 21; width: max-content; margin: -48px 0 12px 14px; padding: 7px 10px; border-radius: 20px; background: #536f55d9; font: 11px 'DM Sans',sans-serif; letter-spacing: .02em; color: #fffdf4; text-shadow: none; pointer-events: none; }
+  .garden-footer { position: fixed; left: 50%; bottom: calc(68px + env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 21; width: max-content; max-width: 90vw; margin: 0; padding: 6px 12px; border: 1px solid #ffffff42; border-radius: 20px; background: #536f55e8; font: 11px 'DM Sans',sans-serif; letter-spacing: .04em; line-height: 1.25; text-align: center; color: #fffdf4; text-shadow: none; pointer-events: none; }
   .secret-heart { left: 9%; bottom: 27%; }
   .secret-star { right: 8%; top: 44%; }
   .apology-butterfly { left: 58%; top: 34%; width: 54px; height: 44px; animation-name: apologyFlightMobile; }
@@ -56,6 +57,12 @@
   .letter-dialog,.apology-dialog { width: 94vw; max-height: 90svh; overflow: auto; }
   .letter-card,.apology-card { padding: 42px 26px 30px; }
 }
+.meadow-grass { position:absolute; inset:52% 0 0; z-index:2; overflow:hidden; pointer-events:none; }
+.meadow-grass i { position:absolute; bottom:var(--base,0); left:var(--x); width:34px; height:var(--height,56px); clip-path:polygon(48% 100%,0 44%,37% 72%,24% 3%,54% 69%,76% 18%,65% 78%,100% 43%,72% 100%); background:linear-gradient(90deg,#527b55b8,#91b58aaf 52%,#4e7952b8); transform:rotate(var(--lean,0deg)); transform-origin:50% 100%; animation:grassSway var(--sway,4.8s) ease-in-out infinite alternate; }
+.meadow-grass i:nth-child(1){--x:2%;--height:66px;--base:3%;--lean:-8deg}.meadow-grass i:nth-child(2){--x:10%;--height:44px;--base:31%;--lean:7deg}.meadow-grass i:nth-child(3){--x:18%;--height:72px;--base:9%;--lean:-5deg}.meadow-grass i:nth-child(4){--x:26%;--height:50px;--base:42%;--lean:9deg}.meadow-grass i:nth-child(5){--x:34%;--height:64px;--base:17%;--lean:-9deg}.meadow-grass i:nth-child(6){--x:42%;--height:46px;--base:50%;--lean:7deg}.meadow-grass i:nth-child(7){--x:50%;--height:76px;--base:6%;--lean:-4deg}.meadow-grass i:nth-child(8){--x:58%;--height:48px;--base:38%;--lean:8deg}.meadow-grass i:nth-child(9){--x:66%;--height:68px;--base:13%;--lean:-7deg}.meadow-grass i:nth-child(10){--x:74%;--height:46px;--base:48%;--lean:6deg}.meadow-grass i:nth-child(11){--x:82%;--height:72px;--base:8%;--lean:-8deg}.meadow-grass i:nth-child(12){--x:90%;--height:52px;--base:32%;--lean:7deg}
+.garden-header:after { content:""; display:block; width:46px; height:1px; margin:9px auto 0; background:linear-gradient(90deg,transparent,#d8b779,transparent); }
+.garden-footer { text-transform:none; }
+@keyframes grassSway { to { transform:rotate(calc(var(--lean,0deg) + 5deg)); } }
 .flower--tulip .tulip-back { fill:#c96888; stroke:#fff4f2; stroke-width:1.4; }
 .flower--tulip .tulip-front { fill:#e994ad; stroke:#fff9f3; stroke-width:1.2; }
 .flower--tulip.flower--yellow .tulip-back { fill:#c79434; }
