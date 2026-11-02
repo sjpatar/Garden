@@ -149,6 +149,80 @@
   .secret-star { top:42%; z-index:9; }
   .apology-butterfly { left:58%; top:25%; }
 }
+/* Portrait becomes one-screen, non-scrolling garden with independent flower hit targets. */
+@media (max-width:700px) and (orientation:portrait) {
+  html,body { height:100%; min-height:0; overflow:hidden; }
+  #app { height:100%; overflow:hidden; }
+  .scene--garden { position:relative; height:100dvh; min-height:0; max-height:100dvh; overflow:hidden; padding:0 0 118px; }
+  .sky-layer { position:absolute; inset:0; background:radial-gradient(ellipse at 78% 12%,#fff4d6 0 4%,transparent 17%),linear-gradient(180deg,#edc7d9 0%,#e9d4e5 37%,#cad9c2 68%,#8fac87 100%); }
+  .garden-header { top:3.5%; width:calc(100% - 28px); }
+  .garden-header .eyebrow { font-size:8px; }
+  .garden-header h2 { font-size:clamp(29px,7.8vw,37px); white-space:nowrap; margin:6px auto; }
+  .garden-header p:last-child { font-size:10px; }
+  .moon { width:36px; height:36px; top:10%; }
+  .distant-hills { bottom:15%; height:24%; }
+  .garden-haze { height:36%; }
+  .garden-path { bottom:8%; height:48%; width:38vw; opacity:.38; }
+  .grass-bank--back { z-index:4; bottom:16%; height:11%; opacity:.9; }
+  .grass-bank--front { z-index:7; bottom:11%; height:8%; opacity:.88; }
+  .garden-vines { z-index:8; bottom:11%; height:9%; opacity:.55; }
+  .flowers,.flowers--back,.flowers--front { position:absolute; inset:0; width:100%; height:100%; }
+  .flowers--back { z-index:3; }
+  .flowers--front { z-index:6; }
+  .flower,.flower--back,.flowers--front .flower { width:59px; height:103px; transform:scale(.77); transform-origin:bottom center; }
+  .flower button { position:absolute; inset:-4px; z-index:4; background:transparent; touch-action:manipulation; }
+  .flower svg { pointer-events:none; }
+  /* 18 organically staggered placements across three compact planting bands. */
+  .flowers--back .flower:nth-child(1) { left:1% !important; top:27%; }
+  .flowers--back .flower:nth-child(2) { left:30% !important; top:31%; }
+  .flowers--back .flower:nth-child(3) { left:65% !important; top:27%; }
+  .flowers--back .flower:nth-child(4) { left:14% !important; top:39%; }
+  .flowers--back .flower:nth-child(5) { left:69% !important; top:40%; }
+  .flowers--front .flower:nth-child(1) { left:41% !important; top:40%; }
+  .flowers--front .flower:nth-child(2) { left:0% !important; top:51%; }
+  .flowers--front .flower:nth-child(3) { left:28% !important; top:54%; }
+  .flowers--front .flower:nth-child(4) { left:59% !important; top:51%; }
+  .flowers--front .flower:nth-child(5) { left:78% !important; top:54%; }
+  .flowers--front .flower:nth-child(6) { left:12% !important; top:63%; }
+  .flowers--front .flower:nth-child(7) { left:45% !important; top:64%; }
+  .flowers--front .flower:nth-child(8) { left:70% !important; top:65%; }
+  .flowers--front .flower:nth-child(9) { left:0% !important; top:73%; }
+  .flowers--front .flower:nth-child(10) { left:29% !important; top:74%; }
+  .flowers--front .flower:nth-child(11) { left:58% !important; top:73%; }
+  .flowers--front .flower:nth-child(12) { left:78% !important; top:75%; }
+  .flowers--front .flower:nth-child(13) { left:12% !important; top:81%; }
+  .flowers--front .flower:nth-child(14) { left:38% !important; top:81%; }
+  .flowers--front .flower:nth-child(15) { left:67% !important; top:81%; }
+  .garden-actions { position:absolute; left:0; right:0; bottom:0; z-index:30; height:62px; min-height:0; padding:8px 12px max(8px,env(safe-area-inset-bottom)); display:flex; justify-content:flex-end; align-items:center; gap:9px; background:linear-gradient(180deg,#527b5800,#527b58f2 28%); }
+  .round-control { width:42px; height:42px; flex:0 0 42px; }
+  .letter-button { height:42px; max-width:66vw; min-width:0; padding:9px 12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:10px; }
+  .garden-footer { position:absolute; left:0; right:0; bottom:66px; z-index:31; width:100%; max-width:none; min-height:34px; padding:7px 12px; margin:0; transform:none; display:flex; justify-content:center; align-items:center; white-space:normal; text-align:center; font-size:10px; background:#527b58d9; color:#fff; }
+  .secret-heart { left:7%; bottom:26%; z-index:10; }
+  .secret-star { right:7%; top:46%; z-index:10; }
+  .apology-butterfly { left:60%; top:24%; z-index:9; }
+}
+@media (max-width:700px) and (orientation:portrait) {
+  .garden-footer {
+    box-sizing:border-box;
+    left:0;
+    right:0;
+    bottom:calc(74px + env(safe-area-inset-bottom, 0px));
+    transform:none;
+    width:100%;
+    max-width:none;
+    min-height:42px;
+    margin:0;
+    padding:10px 16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    white-space:normal;
+    text-align:center;
+    line-height:1.25;
+    overflow-wrap:anywhere;
+  }
+  .garden-actions { min-height:66px; }
+}
 
 /* Tune portrait against the supplied 360–430px phone screenshots. */
 @media (max-width:700px) and (orientation:portrait) {
