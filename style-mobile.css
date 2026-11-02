@@ -39,6 +39,14 @@
   .flowers--front .flower:nth-child(8) { left: 47% !important; top: 700px; }
   .flowers--front .flower:nth-child(9) { left: 67% !important; top: 725px; }
   .flowers--front .flower:nth-child(10) { left: 87% !important; top: 700px; }
+  .flowers--front .flower:nth-child(11) { left: 7% !important; top: 850px; }
+  .flowers--front .flower:nth-child(12) { left: 27% !important; top: 875px; }
+  .flowers--front .flower:nth-child(13) { left: 47% !important; top: 850px; }
+  .flowers--front .flower:nth-child(14) { left: 67% !important; top: 875px; }
+  .flowers--front .flower:nth-child(15) { left: 87% !important; top: 850px; }
+  .flowers--front .flower:nth-child(16) { left: 19% !important; top: 1010px; }
+  .flowers--front .flower:nth-child(17) { left: 49% !important; top: 1035px; }
+  .flowers--front .flower:nth-child(18) { left: 77% !important; top: 1010px; }
   .butterflies { z-index: 6; }
   .butterfly { width: 40px; height: 33px; }
   .garden-actions { position: sticky; left: auto; right: auto; bottom: 0; z-index: 20; margin-top: 0; padding: 12px 14px max(12px, env(safe-area-inset-bottom)); justify-content: flex-end; gap: 8px; background: linear-gradient(transparent,#779777e8 38%); pointer-events: none; }
@@ -53,6 +61,12 @@
   .letter-dialog,.apology-dialog { width: 94vw; max-height: 90svh; overflow: auto; }
   .letter-card,.apology-card { padding: 42px 26px 30px; }
 }
+.flower--tulip .tulip-back { fill:#c96888; stroke:#fff4f2; stroke-width:1.4; }
+.flower--tulip .tulip-front { fill:#e994ad; stroke:#fff9f3; stroke-width:1.2; }
+.flower--tulip.flower--yellow .tulip-back { fill:#c79434; }
+.flower--tulip.flower--yellow .tulip-front { fill:#f0cc69; }
+.flower--tulip.flower--white .tulip-back { fill:#d8c9b7; }
+.flower--tulip.flower--white .tulip-front { fill:#fff8ed; }
 @media (max-width: 700px) and (orientation: landscape) {
   .scene--welcome { min-height: 100svh; padding: 12px 20px; }
   .scene--welcome .card-shell { width: min(78vw, 700px); height: calc(100svh - 24px); min-height: 0; margin: 0 auto; padding: 22px 44px 34px; border-radius: 150px 150px 20px 20px; }
