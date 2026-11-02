@@ -124,7 +124,7 @@
 }
 @media (max-width:700px) and (orientation:landscape) { .secret-star { top:16%; right:20%; } }
 /* Keep the glowing star clear of the moon across screen sizes. */
-.secret-star { right:26%; }
-@media (max-width:700px) and (orientation:portrait) { .secret-star { right:26%; } }
-@media (max-width:700px) and (orientation:landscape) { .secret-star { right:26%; } }
+.secret-star { right:36%; }
+@media (max-width:700px) and (orientation:portrait) { .secret-star { right:36%; } }
+@media (max-width:700px) and (orientation:landscape) { .secret-star { right:36%; } }
 @keyframes starShine { 0%,100% { transform:scale(.9) rotate(-6deg); filter:brightness(1); } 50% { transform:scale(1.28) rotate(12deg); filter:brightness(1.6) drop-shadow(0 0 10px #fff1a8); } }
