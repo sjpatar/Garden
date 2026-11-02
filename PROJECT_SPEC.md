@@ -272,27 +272,28 @@ Test the actual rendered website in a browser at desktop and narrow mobile sizes
 - [x] Recorded the required visual direction, scenes, flower varieties, butterfly requirements, audio, responsiveness, architecture, performance, accessibility and QA criteria.
 - [x] Recorded the required asset directory structure.
 - [x] Marked personal information as editable placeholders.
-- [x] Documented the current baseline: repository contains only an empty `index.html`; no implementation or downloaded assets have been verified.
+- [x] Implemented 18 individually clickable flowers, including pink, yellow and ivory tulips.
 - [x] Implemented the local two-scene experience, responsive styling, personalization configuration, flower notes, secrets, love letter, music control and reduced-motion handling.
 - [x] Implemented a fully local visual fallback with transparent inline botanical SVG artwork, CSS wing-flapping butterflies, petals, particles and layered garden atmosphere.
 - [x] Added `assets/asset-manifest.json` documenting the fallback and planned licensed asset replacements.
 - [x] Added the complete empty asset directory tree so licensed replacements can be dropped into stable paths.
-- [x] Browser-tested the opening transition, all 15 flower message popups, popup closing, final love letter, hidden heart, music fallback notification, and corrected a background-layer hit-area bug.
+- [x] Browser-tested the opening transition, flower message popups, popup closing, final love letter, hidden heart, music fallback notification, and corrected a background-layer hit-area bug.
 - [x] Added the user-provided audio file as `assets/music/background.mp3` and wired the existing music controls to it.
 - [x] Applied current personalization: recipient `Chuani`, nickname/tag `Love`, and a completed love-letter message.
 - [x] Reworked butterfly visuals with layered wings, markings, antennae and varied flight; added a clickable flying apology butterfly and apology letter signed `Samar`.
 - [x] Refined the garden footer to `for Chuani, with love`.
 - [x] Refined welcome-card spacing/footer alignment and tightened butterfly centerlines after rendered visual inspection.
+- [x] Refined tulip SVG shape to share the garden’s stem and foliage styling, and moved the tulips into the visible portrait flower rows.
+- [x] Added asset cache versioning after the tulip update so deployed phones fetch the current script and responsive stylesheet.
 
 ### Unfinished
 
 - [ ] Replace fallback inline artwork with acquired/licensed transparent botanical PNG/WebP files where available.
 - [ ] Create the asset directory tree and acquire/verify permitted local botanical, butterfly, decorative, background and audio assets.
 - [ ] Expand `assets/asset-manifest.json` with provenance and verification metadata for any acquired files.
-- [ ] Implement flower data/messages, popup accessibility and interactions.
-- [ ] Implement animated butterflies with the animated-asset-first strategy and documented fallback if needed.
-- [ ] Implement environmental motion, transitions, secrets and final love letter.
-- [ ] Implement music/effects controls and graceful audio failure handling.
+- [ ] Verify all garden interactions and accessibility behavior on current phone browsers.
+- [ ] Implement the animated-asset-first butterfly strategy if compatible licensed animation assets are acquired.
+- [ ] Replace inline fallback artwork with locally acquired/licensed botanical assets where available.
 - [ ] Complete a separate narrow-mobile visual screenshot pass and replace fallback artwork with licensed PNG/WebP assets where desired.
 
 Future development should read and update this file only when requirements or implementation status meaningfully change. Progress reports should remain concise and prioritize implementation.

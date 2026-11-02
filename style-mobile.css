@@ -12,8 +12,8 @@
   .garden-header { top: 6%; width: 94vw; }
   .garden-header h2 { max-width: 100%; font-size: clamp(37px, 10vw, 50px); }
   .garden-header p:last-child { max-width: 88vw; margin: 8px auto; font-size: 12px; }
-  /* Scrollable portrait garden with three flower rows; every bloom has its own tap target. */
-  .scene--garden { min-height: 1080px; height: 100svh; overflow-x: hidden; overflow-y: auto; }
+  /* Compact portrait meadow: all 18 blooms, including tulips, fit into the scene. */
+  .scene--garden { min-height: 100svh; height: max(100svh, 760px); overflow-x: hidden; overflow-y: auto; }
   .sky-layer,.distant-hills,.garden-haze,.garden-path { position: absolute; }
   .garden-header { position: absolute; top: 38px; }
   .garden-header h2 { font-size: clamp(34px, 9vw, 44px); }
@@ -24,29 +24,24 @@
   .flower,.flower--back,.flowers--front .flower { width: 60px; height: 112px; transform: none; margin: 0; transform-origin: bottom center; }
   .flower:hover,.flowers--front .flower:hover { transform: scale(1.08); }
   .flowers--back .flower,.flowers--front .flower { opacity: 1; }
-  .flowers--back .flower:nth-child(1) { left: 7% !important; top: 330px; }
-  .flowers--back .flower:nth-child(2) { left: 27% !important; top: 355px; }
-  .flowers--back .flower:nth-child(3) { left: 47% !important; top: 330px; }
-  .flowers--back .flower:nth-child(4) { left: 67% !important; top: 355px; }
-  .flowers--back .flower:nth-child(5) { left: 87% !important; top: 330px; }
-  .flowers--front .flower:nth-child(1) { left: 7% !important; top: 515px; }
-  .flowers--front .flower:nth-child(2) { left: 27% !important; top: 540px; }
-  .flowers--front .flower:nth-child(3) { left: 47% !important; top: 515px; }
-  .flowers--front .flower:nth-child(4) { left: 67% !important; top: 540px; }
-  .flowers--front .flower:nth-child(5) { left: 87% !important; top: 515px; }
-  .flowers--front .flower:nth-child(6) { left: 7% !important; top: 700px; }
-  .flowers--front .flower:nth-child(7) { left: 27% !important; top: 725px; }
-  .flowers--front .flower:nth-child(8) { left: 47% !important; top: 700px; }
-  .flowers--front .flower:nth-child(9) { left: 67% !important; top: 725px; }
-  .flowers--front .flower:nth-child(10) { left: 87% !important; top: 700px; }
-  .flowers--front .flower:nth-child(11) { left: 7% !important; top: 850px; }
-  .flowers--front .flower:nth-child(12) { left: 27% !important; top: 875px; }
-  .flowers--front .flower:nth-child(13) { left: 47% !important; top: 850px; }
-  .flowers--front .flower:nth-child(14) { left: 67% !important; top: 875px; }
-  .flowers--front .flower:nth-child(15) { left: 87% !important; top: 850px; }
-  .flowers--front .flower:nth-child(16) { left: 19% !important; top: 1010px; }
-  .flowers--front .flower:nth-child(17) { left: 49% !important; top: 1035px; }
-  .flowers--front .flower:nth-child(18) { left: 77% !important; top: 1010px; }
+  .flowers--back .flower:nth-child(1) { left: 7% !important; top: 245px; }
+  .flowers--back .flower:nth-child(2) { left: 27% !important; top: 265px; }
+  .flowers--back .flower:nth-child(3) { left: 47% !important; top: 245px; }
+  .flowers--back .flower:nth-child(4) { left: 67% !important; top: 265px; }
+  .flowers--back .flower:nth-child(5) { left: 87% !important; top: 245px; }
+  .flowers--front .flower:nth-child(1) { left: 7% !important; top: 355px; }
+  .flowers--front .flower:nth-child(2) { left: 27% !important; top: 375px; }
+  .flowers--front .flower:nth-child(3) { left: 47% !important; top: 355px; }
+  .flowers--front .flower:nth-child(4) { left: 67% !important; top: 375px; }
+  .flowers--front .flower:nth-child(5) { left: 87% !important; top: 355px; }
+  .flowers--front .flower:nth-child(6) { left: 7% !important; top: 465px; }
+  .flowers--front .flower:nth-child(7) { left: 27% !important; top: 485px; }
+  .flowers--front .flower:nth-child(8) { left: 47% !important; top: 465px; }
+  .flowers--front .flower:nth-child(9) { left: 67% !important; top: 485px; }
+  .flowers--front .flower:nth-child(10) { left: 87% !important; top: 465px; }
+  .flowers--front .flower:nth-child(11) { left: 12% !important; top: 575px; }
+  .flowers--front .flower:nth-child(12) { left: 47% !important; top: 590px; }
+  .flowers--front .flower:nth-child(13) { left: 82% !important; top: 575px; }
   .butterflies { z-index: 6; }
   .butterfly { width: 40px; height: 33px; }
   .garden-actions { position: sticky; left: auto; right: auto; bottom: 0; z-index: 20; margin-top: 0; padding: 12px 14px max(12px, env(safe-area-inset-bottom)); justify-content: flex-end; gap: 8px; background: linear-gradient(transparent,#779777e8 38%); pointer-events: none; }
