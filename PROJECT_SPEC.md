@@ -285,7 +285,7 @@ Test the actual rendered website in a browser at desktop and narrow mobile sizes
 - [x] Refined welcome-card spacing/footer alignment and tightened butterfly centerlines after rendered visual inspection.
 - [x] Refined tulip SVG shape to share the garden’s stem and foliage styling, moved the tulips into the visible portrait flower rows, and staggered them into a separate desktop meadow row.
 - [x] Added asset cache versioning after the tulip update so deployed phones fetch the current script and responsive stylesheet.
-- [x] Added layered, gently swaying grass tufts between the flowers; aligned the portrait header and anchored the footer and action dock to the phone viewport.
+- [x] Added a denser layer of gently swaying grass tufts between the flowers; aligned the portrait header and anchored the footer and action dock to the phone viewport.
 
 ### Unfinished
 
