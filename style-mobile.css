@@ -150,6 +150,33 @@
   .apology-butterfly { left:58%; top:25%; }
 }
 @media (max-width:700px) and (orientation:portrait) {
+  /* Final cascade overrides: keep the entire collection above the footer. */
+  .flowers--back .flower:nth-child(1) { top:25% !important; }
+  .flowers--back .flower:nth-child(2) { top:29% !important; }
+  .flowers--back .flower:nth-child(3) { top:25% !important; }
+  .flowers--back .flower:nth-child(4) { top:38% !important; }
+  .flowers--back .flower:nth-child(5) { top:38% !important; }
+  .flowers--front .flower:nth-child(1) { top:38% !important; }
+  .flowers--front .flower:nth-child(2) { top:49% !important; }
+  .flowers--front .flower:nth-child(3) { top:51% !important; }
+  .flowers--front .flower:nth-child(4) { top:49% !important; }
+  .flowers--front .flower:nth-child(5) { top:51% !important; }
+  .flowers--front .flower:nth-child(6) { top:60% !important; }
+  .flowers--front .flower:nth-child(7) { top:60% !important; }
+  .flowers--front .flower:nth-child(8) { top:62% !important; }
+  .flowers--front .flower:nth-child(9) { top:69% !important; }
+  .flowers--front .flower:nth-child(10) { top:70% !important; }
+  .flowers--front .flower:nth-child(11) { top:69% !important; }
+  .flowers--front .flower:nth-child(12) { top:71% !important; }
+  .flowers--front .flower:nth-child(13) { top:75% !important; }
+  .meadow-grass { z-index:5 !important; opacity:.46 !important; top:45% !important; height:26% !important; }
+  .grass-bank--back { bottom:12% !important; height:5% !important; }
+  .grass-bank--front { bottom:8% !important; height:3% !important; }
+  .garden-vines { bottom:8% !important; height:4% !important; }
+  .garden-footer { bottom:calc(62px + env(safe-area-inset-bottom,0px)) !important; display:flex !important; flex-direction:row !important; gap:4px !important; justify-content:center !important; align-items:center !important; left:0 !important; right:0 !important; width:100% !important; max-width:none !important; transform:none !important; white-space:nowrap !important; }
+  .garden-actions { bottom:env(safe-area-inset-bottom,0px) !important; height:62px !important; }
+}
+@media (max-width:700px) and (orientation:portrait) {
   .scene--garden { height:100dvh; min-height:100dvh; max-height:100dvh; overflow:hidden; }
   .flowers--back,.flowers--front { position:absolute; left:0; right:0; top:0; bottom:0; height:100%; pointer-events:none; }
   .flowers--back .flower,.flowers--front .flower { position:absolute; pointer-events:auto; width:64px; height:112px; transform:scale(.8); }
