@@ -150,6 +150,38 @@
   .apology-butterfly { left:58%; top:25%; }
 }
 @media (max-width:700px) and (orientation:portrait) {
+  .scene--garden { height:100dvh; min-height:100dvh; max-height:100dvh; overflow:hidden; }
+  .flowers--back,.flowers--front { position:absolute; left:0; right:0; top:0; bottom:0; height:100%; pointer-events:none; }
+  .flowers--back .flower,.flowers--front .flower { position:absolute; pointer-events:auto; width:64px; height:112px; transform:scale(.8); }
+  .flowers--back .flower:nth-child(1) { left:0% !important; top:27%; }
+  .flowers--back .flower:nth-child(2) { left:32% !important; top:30%; }
+  .flowers--back .flower:nth-child(3) { left:67% !important; top:27%; }
+  .flowers--back .flower:nth-child(4) { left:14% !important; top:39%; }
+  .flowers--back .flower:nth-child(5) { left:69% !important; top:39%; }
+  .flowers--front .flower:nth-child(1) { left:40% !important; top:39%; }
+  .flowers--front .flower:nth-child(2) { left:0% !important; top:50%; }
+  .flowers--front .flower:nth-child(3) { left:28% !important; top:52%; }
+  .flowers--front .flower:nth-child(4) { left:59% !important; top:50%; }
+  .flowers--front .flower:nth-child(5) { left:78% !important; top:52%; }
+  .flowers--front .flower:nth-child(6) { left:12% !important; top:61%; }
+  .flowers--front .flower:nth-child(7) { left:44% !important; top:61%; }
+  .flowers--front .flower:nth-child(8) { left:70% !important; top:63%; }
+  .flowers--front .flower:nth-child(9) { left:0% !important; top:71%; }
+  .flowers--front .flower:nth-child(10) { left:29% !important; top:72%; }
+  .flowers--front .flower:nth-child(11) { left:58% !important; top:71%; }
+  .flowers--front .flower:nth-child(12) { left:78% !important; top:73%; }
+  .flowers--front .flower:nth-child(13) { left:17% !important; top:78%; }
+  .meadow-grass { position:absolute; z-index:5; pointer-events:none; left:0; right:0; top:43%; height:32%; opacity:.7; background:repeating-linear-gradient(78deg,transparent 0 22px,#6f986b 23px 25px,transparent 26px 39px),repeating-linear-gradient(103deg,transparent 0 31px,#83a878 32px 34px,transparent 35px 52px); mask-image:linear-gradient(180deg,transparent,#000 15%,#000 88%,transparent); }
+  .flowers--front { z-index:6; }
+  .flowers--back { z-index:4; }
+  .grass-bank--back { z-index:5; bottom:12%; height:6%; }
+  .grass-bank--front { z-index:8; bottom:7%; height:4%; }
+  .garden-vines { z-index:9; bottom:7%; height:5%; }
+  .garden-actions { position:fixed; left:0; right:0; bottom:env(safe-area-inset-bottom,0px); z-index:30; height:62px; min-height:62px; margin:0; padding:8px 12px; display:flex; flex-direction:row; align-items:center; justify-content:flex-end; gap:9px; background:linear-gradient(180deg,#527b5800,#527b58f2 30%); }
+  .garden-footer { position:fixed; left:0; right:0; bottom:calc(62px + env(safe-area-inset-bottom,0px)); z-index:31; width:100%; max-width:none; height:36px; min-height:36px; margin:0; padding:7px 12px; transform:none; display:flex; flex-direction:row; justify-content:center; align-items:center; gap:4px; white-space:nowrap; text-align:center; box-sizing:border-box; background:#456c4def; color:#fff; font:500 11px 'DM Sans',sans-serif; letter-spacing:.01em; text-shadow:none; }
+  .garden-footer span { display:inline; }
+}
+@media (max-width:700px) and (orientation:portrait) {
   .scene--garden { height:100dvh; min-height:0; padding-bottom:0; overflow:hidden; }
   .garden-header { top:3%; }
   .flowers,.flowers--back,.flowers--front { inset:0; height:100%; }
