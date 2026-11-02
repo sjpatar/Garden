@@ -281,11 +281,12 @@ Test the actual rendered website in a browser at desktop and narrow mobile sizes
 - [x] Added the user-provided audio file as `assets/music/background.mp3` and wired the existing music controls to it.
 - [x] Applied current personalization: recipient `Chuani`, nickname/tag `Love`, and a completed love-letter message.
 - [x] Reworked butterfly visuals with layered wings, markings, antennae and varied flight; added a clickable flying apology butterfly and apology letter signed `Samar`.
-- [x] Refined the garden footer to `for Chuani, with love`.
+- [x] Removed the garden signature footer at the user's request.
 - [x] Refined welcome-card spacing/footer alignment and tightened butterfly centerlines after rendered visual inspection.
 - [x] Refined tulip SVG shape to share the garden’s stem and foliage styling, moved the tulips into the visible portrait flower rows, and staggered them into a separate desktop meadow row.
 - [x] Added asset cache versioning after the tulip update so deployed phones fetch the current script and responsive stylesheet.
-- [x] Added a denser layer of gently swaying grass tufts between the flowers; aligned the portrait header and anchored the footer and action dock to the phone viewport.
+- [x] Added a denser layer of gently swaying grass tufts between the flowers; aligned the portrait header and anchored the action dock to the phone viewport.
+- [x] Raised the green mountain meadow behind the complete flower bed so the flowers grow from the hillside rather than the pink sky.
 
 ### Unfinished
 
