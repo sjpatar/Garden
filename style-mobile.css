@@ -149,6 +149,37 @@
   .secret-star { top:42%; z-index:9; }
   .apology-butterfly { left:58%; top:25%; }
 }
+@media (max-width:700px) and (orientation:portrait) {
+  .scene--garden { height:100dvh; min-height:0; padding-bottom:0; overflow:hidden; }
+  .garden-header { top:3%; }
+  .flowers,.flowers--back,.flowers--front { inset:0; height:100%; }
+  .flower,.flower--back,.flowers--front .flower { width:62px; height:110px; transform:scale(.78); }
+  .flowers--back .flower:nth-child(1) { left:1% !important; top:27%; }
+  .flowers--back .flower:nth-child(2) { left:31% !important; top:31%; }
+  .flowers--back .flower:nth-child(3) { left:65% !important; top:27%; }
+  .flowers--back .flower:nth-child(4) { left:15% !important; top:40%; }
+  .flowers--back .flower:nth-child(5) { left:70% !important; top:39%; }
+  .flowers--front .flower:nth-child(1) { left:41% !important; top:40%; }
+  .flowers--front .flower:nth-child(2) { left:0% !important; top:52%; }
+  .flowers--front .flower:nth-child(3) { left:28% !important; top:54%; }
+  .flowers--front .flower:nth-child(4) { left:60% !important; top:51%; }
+  .flowers--front .flower:nth-child(5) { left:79% !important; top:54%; }
+  .flowers--front .flower:nth-child(6) { left:12% !important; top:64%; }
+  .flowers--front .flower:nth-child(7) { left:45% !important; top:63%; }
+  .flowers--front .flower:nth-child(8) { left:70% !important; top:65%; }
+  .flowers--front .flower:nth-child(9) { left:0% !important; top:74%; }
+  .flowers--front .flower:nth-child(10) { left:29% !important; top:75%; }
+  .flowers--front .flower:nth-child(11) { left:58% !important; top:73%; }
+  .flowers--front .flower:nth-child(12) { left:78% !important; top:75%; }
+  .flowers--front .flower:nth-child(13) { left:15% !important; top:79%; }
+  /* Grass remains a low garden edge so every head and stem stays visible. */
+  .grass-bank--back { bottom:8%; height:5%; z-index:4; opacity:.76; }
+  .grass-bank--front { bottom:5%; height:3.5%; z-index:7; opacity:.74; }
+  .garden-vines { bottom:6%; height:5%; z-index:8; opacity:.48; }
+  .garden-actions { position:fixed; bottom:env(safe-area-inset-bottom,0px); height:62px; min-height:0; padding:8px 12px; }
+  .garden-footer { position:fixed; bottom:calc(62px + env(safe-area-inset-bottom,0px)); height:36px; min-height:36px; padding:7px 12px; display:flex; flex-direction:row; justify-content:center; align-items:center; gap:.28em; white-space:nowrap; font-size:11px; }
+  .garden-footer [data-her-name] { display:inline; }
+}
 /* Portrait becomes one-screen, non-scrolling garden with independent flower hit targets. */
 @media (max-width:700px) and (orientation:portrait) {
   html,body { height:100%; min-height:0; overflow:hidden; }
