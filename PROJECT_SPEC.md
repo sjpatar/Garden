@@ -283,7 +283,7 @@ Test the actual rendered website in a browser at desktop and narrow mobile sizes
 - [x] Reworked butterfly visuals with layered wings, markings, antennae and varied flight; added a clickable flying apology butterfly and apology letter signed `Samar`.
 - [x] Refined the garden footer to `for Chuani, with love`.
 - [x] Refined welcome-card spacing/footer alignment and tightened butterfly centerlines after rendered visual inspection.
-- [x] Refined tulip SVG shape to share the garden’s stem and foliage styling, and moved the tulips into the visible portrait flower rows.
+- [x] Refined tulip SVG shape to share the garden’s stem and foliage styling, moved the tulips into the visible portrait flower rows, and staggered them into a separate desktop meadow row.
 - [x] Added asset cache versioning after the tulip update so deployed phones fetch the current script and responsive stylesheet.
 
 ### Unfinished
